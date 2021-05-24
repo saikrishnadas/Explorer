@@ -4,8 +4,23 @@ import Avatar from "../components/Avatar";
 import { ViewGridIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 import Footer from "../components/Footer";
+import { useRef } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+  const searchInputRef = useRef(null);
+
+  const search = (e) => {
+    e.preventDefault();
+
+    const term = searchInputRef.current.value;
+
+    if (!term) return;
+
+    router.push(`/search?term=${term}`);
+  };
+
   return (
     <div className="flex flex-col item-center justify-center h-screen">
       <Head>
@@ -41,11 +56,17 @@ export default function Home() {
         rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl"
         >
           <SearchIcon className="h-5 mr-3 text-gray-500" />
-          <input type="text" className="flex-grow focus:outline-none" />
+          <input
+            ref={searchInputRef}
+            type="text"
+            className="flex-grow focus:outline-none"
+          />
         </div>
 
         <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8">
-          <button className="btn">Search</button>
+          <button className="btn" onClick={search}>
+            Search
+          </button>
         </div>
       </form>
 
