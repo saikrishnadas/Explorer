@@ -1,4 +1,5 @@
 import React from "react";
+import PaginationButton from "./PaginationButton";
 
 function SearchResults({ results }) {
   return (
@@ -25,6 +26,7 @@ function SearchResults({ results }) {
           </div>
         </div>
       ))}
+      <PaginationButton />
     </div>
   );
 }
