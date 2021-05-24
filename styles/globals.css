@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 @layer components {
+  .btn {
+    @apply bg-gray-50 p-3 rounded-md ring-gray-200 text-sm text-gray-800 hover:shadow-lg focus:outline-none;
+  }
+
   .link {
     @apply hover:underline cursor-pointer;
   }
