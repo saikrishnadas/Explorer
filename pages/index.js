@@ -31,12 +31,18 @@ export default function Home() {
 
       <header className="flex w-full justify-between p-5 text-sm text-gray-700">
         <div className="flex space-x-5 items-center">
-          <p className="link">About</p>
-          <p className="link">Store</p>
+          <p className="link">
+            <a href="https://www.linkedin.com/in/sai-krishna-das/">About</a>
+          </p>
+          <p className="link">
+            <a href="https://github.com/saikrishnadas/Explorer">Code</a>
+          </p>
         </div>
         <div className="flex space-x-5 items-center">
-          <p className="link">Gmail</p>
-          <p className="link">Images</p>
+          <p className="link">saikrishnadas666@gmail.com</p>
+          <p className="link">
+            <a href="https://www.instagram.com/sai_._0000_/">Images</a>
+          </p>
 
           <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
@@ -45,14 +51,9 @@ export default function Home() {
       </header>
 
       <form className="flex flex-col items-center mt-44 flex-grow">
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Iq_AG0Nci05ecwQDcL8csAHaCg%26pid%3DApi&f=1"
-          alt="logo"
-          height={100}
-          width={300}
-        />
+        <img src="/explorerlogowhite.png" alt="logo" height={100} width={300} />
         <div
-          className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md
+          className="flex w-full mt-4 hover:shadow-lg focus-within:shadow-lg max-w-md
         rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl"
         >
           <SearchIcon className="h-5 mr-3 text-gray-500" />
@@ -63,7 +64,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8">
+        <div className="flex flex-col w-1/4 space-y-2 justify-center mt-8">
           <button className="btn" onClick={search}>
             Search
           </button>

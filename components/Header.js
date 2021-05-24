@@ -23,7 +23,7 @@ function Header() {
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
         <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Iq_AG0Nci05ecwQDcL8csAHaCg%26pid%3DApi&f=1"
+          src="/explorerlogowhite.png"
           height={40}
           width={120}
           onClick={() => router.push("/")}
