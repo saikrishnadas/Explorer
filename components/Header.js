@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { SearchIcon, XIcon } from "@heroicons/react/solid";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
-import Image from "next/image";
 
 function Header() {
   const router = useRouter();
@@ -34,6 +33,7 @@ function Header() {
             ref={searchInputRef}
             type="text"
             className="flex-grow w-full focus:outline-none"
+            defaultValue={router.query.term}
           />
           <XIcon
             className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
