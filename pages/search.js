@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import SearchResults from "../components/SearchResults";
 
 function Search({ results }) {
+  const API_KEY = process.env.API_KEY;
   const router = useRouter();
 
   return (
