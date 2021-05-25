@@ -14,7 +14,7 @@ Explorer UI is partially inspried from google.
 ![DarkLightGIF](https://github.com/saikrishnadas/Explorer/blob/main/darklight.gif)
 
 
-##Screenshot of the Homepage:
+## Screenshot of the Homepage : 📸
 
 ![HomepageLight](https://github.com/saikrishnadas/Explorer/blob/main/homepagelight.png)
 
