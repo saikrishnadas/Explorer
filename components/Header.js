@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useRouter } from "next/router";
 import { SearchIcon, XIcon } from "@heroicons/react/solid";
-import Search from "../pages/search";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
 

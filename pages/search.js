@@ -8,13 +8,14 @@ import SearchResults from "../components/SearchResults";
 
 function Search({ results }) {
   const router = useRouter();
+
   return (
     <div>
       <Head>
         <title>{router.query.term} - Explorer Search</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Header dark />
 
       <SearchResults results={results} />
     </div>
@@ -24,7 +25,7 @@ function Search({ results }) {
 export default Search;
 
 export async function getServerSideProps(context) {
-  const useDummyData = false;
+  const useDummyData = true;
   const startIndex = context.query.start || "0";
 
   const data = useDummyData

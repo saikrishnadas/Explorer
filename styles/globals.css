@@ -11,4 +11,8 @@
   .link {
     @apply hover:underline cursor-pointer;
   }
+
+  .themebtn {
+    @apply h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer;
+  }
 }
