@@ -1,8 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useRouter } from "next/router";
 import { SearchIcon, XIcon } from "@heroicons/react/solid";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
+import Image from "next/image";
 
 function Header() {
   const router = useRouter();
